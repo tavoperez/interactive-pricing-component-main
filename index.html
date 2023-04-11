@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Interactive pricing component</title>
+
+</head>
+<body>
+  <div class="containerAll">
+    <header class="headerImg">
+      <div class="header">
+        <h2 class="title">Simple, traffic-based pricing</h2>
+        <div>
+          <p>Sign-up for our 30-day trial.</p>
+          <p>No credit card required.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="section">
+        <div class="sectionQuota">          
+            <p><span style="margin-right: 7px;">10k</span>Pageviews</p>   
+            <p><span style="font-size: 2em;">$</span><span class="price">18</span>/month</p>          
+        </div>
+        <div class="sectionBar sliderThumb">
+          <input type="range" min="1" max="6" class="customRange">
+        </div>
+        <div class="sectionDiscount">
+            <p>Monthly Billing</p>
+          <div>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+            <p>Yearly Billing</p>
+            <p class="discount">25% discount</p>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="info">
+          <div class="divInfo">
+            <p>Unlimited websites</p>
+            <p>100% data ownership</p>
+            <p>Email reports</p>
+          </div>
+          <div>
+            <button id="button" type="submit">Start my trial</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div> 
+</body>
+</html>

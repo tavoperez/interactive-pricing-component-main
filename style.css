@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+.containerAll{
+    height: 98dvh;
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+.headerImg{
+    background-image: url(images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 6rem;
+    background-size: 180px;
+}
+.header{
+
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+    .title{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .header div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px 4px;
+        padding: 4px;
+    }
+    .header p{
+        text-align: center;
+    }
+
+.container{
+    width: 80%; /* Ancho de la tarjeta */
+    max-width: 40rem; /* Ancho máximo de la tarjeta */
+    margin: 0 auto; /* Margen automático en los lados para centrar */
+    background-color: #FFF;
+    padding: 3px; /* Espacio de relleno dentro de la tarjeta */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra para la tarjeta */
+}
+    .sectionQuota{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 7rem;
+    }
+        .price{
+            font-size: 2em;
+        }
+    .sectionBar{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .customRange {
+        width: 80%;
+    }
+
+    .sectionDiscount{
+        height: 5rem;
+        margin-right: 13px;
+        gap: 0 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+        .discount{
+            background-color: hsl(14, 92%, 95%);
+            color: hsl(15, 100%, 70%);
+            border-radius: 3px;
+            border-radius: 17px;
+            padding: 0 15px;
+        }
+
+    .div{
+        width: 2rem;
+    }
+    /* style switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    /* end style switch */
+
+.footer{
+    height: 10rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+    .divInfo{
+        display: grid;
+        gap: 4px 0;
+    }
+    button{
+        background-color: #0066ff;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 42px;
+        text-align: center;
+        /* text-decoration: none; */
+        /* display: inline-block; */
+        width: 190px;
+        font-size: 16px;
+    }
+
+@media (max-width: 465px) {
+    .title{
+        font-size: 22px;
+    }
+  }
+  
